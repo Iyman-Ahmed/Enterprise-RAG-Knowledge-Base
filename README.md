@@ -3,9 +3,7 @@ title: Enterprise RAG Knowledge Base
 emoji: 🔍
 colorFrom: blue
 colorTo: purple
-sdk: streamlit
-sdk_version: 1.37.0
-app_file: app.py
+sdk: docker
 pinned: false
 license: mit
 ---
