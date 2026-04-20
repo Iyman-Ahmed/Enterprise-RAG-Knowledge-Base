@@ -1,0 +1,26 @@
+ACME SAAS PLATFORM — PRODUCT FAQ
+==================================
+
+Q: How do I reset my password?
+A: Click "Forgot Password" on the login screen. Enter your registered email address and you will receive a reset link within 5 minutes. The link expires after 30 minutes. If you do not receive the email, check your spam folder or contact support@acme.com.
+
+Q: What is the data retention policy?
+A: Customer data is retained for 7 years after account closure in accordance with financial regulations. Active account data is backed up daily with 30-day rolling snapshots. Backups are stored in geographically redundant data centers.
+
+Q: What are the API rate limits?
+A: The free tier allows 100 API calls per hour. The Professional plan allows 10,000 calls per hour. The Enterprise plan has custom rate limits negotiated per contract. Rate limit headers (X-RateLimit-Remaining and X-RateLimit-Reset) are included in every API response.
+
+Q: Which payment methods are accepted?
+A: We accept Visa, Mastercard, American Express, and PayPal for monthly plans. Annual plans also accept ACH bank transfers and wire transfers. Cryptocurrency payments are not supported.
+
+Q: How do I export my data?
+A: Go to Settings > Data > Export. You can export in CSV, JSON, or XML format. Exports are processed within 24 hours and a download link is emailed to the account owner. Exports are available for download for 72 hours.
+
+Q: What uptime SLA do you guarantee?
+A: We guarantee 99.9% uptime for Professional and Enterprise plans. Scheduled maintenance windows are excluded and communicated at least 48 hours in advance via the status page at status.acme.com. Free tier does not include an SLA.
+
+Q: Is the platform GDPR compliant?
+A: Yes. ACME is fully GDPR compliant. We act as a data processor and provide a Data Processing Agreement (DPA) on request. Users can request data deletion via Settings > Privacy > Delete My Data, which is processed within 30 days.
+
+Q: What integrations are available?
+A: We natively integrate with Salesforce, HubSpot, Slack, Jira, and Zapier. REST API and webhooks are available on all paid plans. An SDK is available for Python, JavaScript, Java, and Go.

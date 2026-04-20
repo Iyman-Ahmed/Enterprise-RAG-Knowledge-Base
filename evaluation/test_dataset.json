@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How many days of annual leave do employees get?",
+    "ground_truth": "Full-time employees are entitled to 20 days of paid annual leave per year, accruing at 1.67 days per month."
+  },
+  {
+    "question": "How much unused leave can be carried over to next year?",
+    "ground_truth": "Unused leave can be carried over up to a maximum of 10 days into the next calendar year."
+  },
+  {
+    "question": "How many sick leave days are provided per year?",
+    "ground_truth": "Employees receive 10 sick leave days per year. Sick leave does not carry over to the next year."
+  },
+  {
+    "question": "How many days can employees work remotely per week?",
+    "ground_truth": "Employees may work remotely up to 3 days per week with manager approval."
+  },
+  {
+    "question": "What are the core working hours for remote employees?",
+    "ground_truth": "Remote employees must be available during core hours of 10am to 3pm in their local timezone."
+  },
+  {
+    "question": "When are performance reviews conducted?",
+    "ground_truth": "Performance reviews are conducted twice a year, in June and December."
+  },
+  {
+    "question": "What is the performance bonus for a rating of 5?",
+    "ground_truth": "A rating of 5 qualifies an employee for a performance bonus of 20% of base salary."
+  },
+  {
+    "question": "What is the daily meal allowance during business travel?",
+    "ground_truth": "The daily meal allowance during business travel is $60."
+  },
+  {
+    "question": "What is the maximum hotel rate in tier-1 cities?",
+    "ground_truth": "Hotel accommodation must not exceed $350 per night in tier-1 cities such as New York, London, San Francisco, and Tokyo."
+  },
+  {
+    "question": "How do I reset my password on the ACME platform?",
+    "ground_truth": "Click Forgot Password on the login screen, enter your email, and you will receive a reset link within 5 minutes. The link expires after 30 minutes."
+  },
+  {
+    "question": "What are the API rate limits for the free tier?",
+    "ground_truth": "The free tier allows 100 API calls per hour."
+  },
+  {
+    "question": "How long is customer data retained after account closure?",
+    "ground_truth": "Customer data is retained for 7 years after account closure in accordance with financial regulations."
+  },
+  {
+    "question": "What uptime SLA does ACME guarantee?",
+    "ground_truth": "ACME guarantees 99.9% uptime for Professional and Enterprise plans. Free tier does not include an SLA."
+  },
+  {
+    "question": "How does the company 401k match work?",
+    "ground_truth": "The company matches 401k contributions up to 4% of base salary. Employees are eligible after 6 months of employment."
+  },
+  {
+    "question": "What is the annual learning and development budget?",
+    "ground_truth": "A $1,000 annual learning and development budget is provided to all employees, reimbursable against approved courses and certifications."
+  }
+]

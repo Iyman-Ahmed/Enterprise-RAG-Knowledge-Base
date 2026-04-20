@@ -1,0 +1,42 @@
+# Core LangChain
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-core==0.2.38
+
+# Vector DB
+chromadb==0.5.5
+
+# Embeddings + Reranker (local models, no API key needed)
+sentence-transformers==3.0.1
+
+# Sparse search
+rank-bm25==0.2.2
+
+# Document loaders
+pypdf==4.3.1
+python-docx==1.1.2
+unstructured==0.15.0
+
+# LLM providers
+groq==0.9.0
+openai==1.40.0          # also used for LM Studio (OpenAI-compatible)
+httpx==0.27.2           # pinned — openai 1.40 breaks with httpx 0.28+
+
+# API backend
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.9
+sqlalchemy==2.0.32
+pydantic==2.8.2
+
+# Evaluation
+ragas==0.1.21
+datasets==2.21.0
+
+# UI
+streamlit==1.37.0
+
+# Utilities
+python-dotenv==1.0.1
+tenacity==8.5.0
+tiktoken==0.7.0

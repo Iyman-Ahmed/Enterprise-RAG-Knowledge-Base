@@ -1,0 +1,142 @@
+{
+  "total_questions": 15,
+  "keyword_accuracy": 1.0,
+  "hallucination_rate": 0.5333,
+  "per_question": [
+    {
+      "question": "How many days of annual leave do employees get?",
+      "ground_truth": "Full-time employees are entitled to 20 days of paid annual leave per year, accruing at 1.67 days per month.",
+      "answer": "According to SECTION 1: LEAVE POLICY, all full-time employees are entitled to 20 days of paid annual leave per year [Source: unknown, Page ?].\n\nAdditionally, it is mentioned that leave accrues at 1.67 days per month, but this information does not directly answer the question about the total number of annual leave days.\n\nUnused leave can be carried over up to a maximum of 10 days into the next calendar year, but again, this is an additional detail and not the direct answer to the question.\n\nTherefore, the most straightforward answer to the question is that employees get 20 days of annual leave per year [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.004,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How much unused leave can be carried over to next year?",
+      "ground_truth": "Unused leave can be carried over up to a maximum of 10 days into the next calendar year.",
+      "answer": "According to SECTION 1 of the ACME CORPORATION \u2014 EMPLOYEE HANDBOOK 2024, unused leave can be carried over up to a maximum of 10 days into the next calendar year [Source: unknown].\n\nHowever, it's worth noting that this is only possible if the employee has not used all their accrued leave by the end of the current year. The accrual rate is 1.67 days per month, and employees are entitled to 20 days of paid annual leave per year.\n\nTo calculate the maximum carryover, we need more information about the number of months worked in a year. Assuming a standard 12-month calendar, an employee would accrue:\n\n20 days/year * (12 months / 1 year) = 240 days/year\n240 days/year / 12 months/year = 20 days/month\n\nSince leave accrues at 1.67 days per month, the total number of days accrued in a year is:\n20 days/month * 12 months/year = 240 days/year\nHowever, this is not correct as we know that 20 days/year is already given.\n\nSo let's recalculate it using the given information.\nLeave accrues at 1.67 days per month. So total leave for one year would be \n20 days/year / (1.67 days/month) = 12 months/year\n\nNow, if an employee works for a full year and uses all their accrued leave by the end of the current year, they can carry over up to a maximum of 10 days into the next calendar year.\n\nBut we don't have enough information about how many months worked in a year.",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.009,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How many sick leave days are provided per year?",
+      "ground_truth": "Employees receive 10 sick leave days per year. Sick leave does not carry over to the next year.",
+      "answer": "According to [1], Sick leave is provided separately at 10 days per year. \n\nTherefore, the answer is 10 days per year.",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.053,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How many days can employees work remotely per week?",
+      "ground_truth": "Employees may work remotely up to 3 days per week with manager approval.",
+      "answer": "Employees may work remotely up to 3 days per week with manager approval [Source: unknown, Page ?]. \n\nNote that full remote work arrangements require VP-level approval and are reviewed quarterly, but this does not specify a specific number of days for full remote work.",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What are the core working hours for remote employees?",
+      "ground_truth": "Remote employees must be available during core hours of 10am to 3pm in their local timezone.",
+      "answer": "Remote employees must be available during core hours of 10am to 3pm in their local timezone [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "When are performance reviews conducted?",
+      "ground_truth": "Performance reviews are conducted twice a year, in June and December.",
+      "answer": "Performance reviews are conducted twice a year: in June and December [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What is the performance bonus for a rating of 5?",
+      "ground_truth": "A rating of 5 qualifies an employee for a performance bonus of 20% of base salary.",
+      "answer": "The performance bonus for a rating of 5 is 20% of base salary [Source: unknown, Page ?].\n\nHowever, since we don't have enough information about the specific details regarding the percentage calculation in the provided documents, I'll provide an answer based on the given context.\n\nAssuming that the bonus pool is indeed 20% for a rating of 5, and considering it's a part of base salary, then the performance bonus would be 20% of the employee's base salary.",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.024,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What is the daily meal allowance during business travel?",
+      "ground_truth": "The daily meal allowance during business travel is $60.",
+      "answer": "The daily meal allowance during business travel is $60. \n\n[Source: 1]",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.0,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What is the maximum hotel rate in tier-1 cities?",
+      "ground_truth": "Hotel accommodation must not exceed $350 per night in tier-1 cities such as New York, London, San Francisco, and Tokyo.",
+      "answer": "The maximum hotel rate in tier-1 cities is $350 per night [Source: unknown, Page ?].\n\nNote: Tier-1 cities are specified as New York, London, San Francisco, and Tokyo.",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How do I reset my password on the ACME platform?",
+      "ground_truth": "Click Forgot Password on the login screen, enter your email, and you will receive a reset link within 5 minutes. The link expires after 30 minutes.",
+      "answer": "To reset your password on the ACME SAAS PLATFORM, follow these steps:\n\n1. Click \"Forgot Password\" on the login screen.\n2. Enter your registered email address.\n\nYou will receive a reset link within 5 minutes [Source: unknown, Page ?].\n\nNote that the link expires after 30 minutes. If you do not receive the email, check your spam folder or contact support@acme.com [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.0,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What are the API rate limits for the free tier?",
+      "ground_truth": "The free tier allows 100 API calls per hour.",
+      "answer": "The free tier allows 100 API calls per hour [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.0,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How long is customer data retained after account closure?",
+      "ground_truth": "Customer data is retained for 7 years after account closure in accordance with financial regulations.",
+      "answer": "Customer data is retained for 7 years after account closure in accordance with financial regulations [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What uptime SLA does ACME guarantee?",
+      "ground_truth": "ACME guarantees 99.9% uptime for Professional and Enterprise plans. Free tier does not include an SLA.",
+      "answer": "We guarantee 99.9% uptime for Professional and Enterprise plans [Source: unknown, Page ?]. Scheduled maintenance windows are excluded and communicated at least 48 hours in advance via the status page at status.acme.com.",
+      "keyword_hit": true,
+      "hallucination_detected": true,
+      "hallucination_score": 0.001,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "How does the company 401k match work?",
+      "ground_truth": "The company matches 401k contributions up to 4% of base salary. Employees are eligible after 6 months of employment.",
+      "answer": "The company matches 401k contributions up to 4% of base salary [Source: unknown, Page ?]. Employees are eligible for the 401k match after 6 months of employment [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.0,
+      "provider": "lmstudio"
+    },
+    {
+      "question": "What is the annual learning and development budget?",
+      "ground_truth": "A $1,000 annual learning and development budget is provided to all employees, reimbursable against approved courses and certifications.",
+      "answer": "The annual learning and development budget provided to all employees is $1,000, which is reimbursable against approved courses and certifications [Source: unknown, Page ?].",
+      "keyword_hit": true,
+      "hallucination_detected": false,
+      "hallucination_score": 0.0,
+      "provider": "lmstudio"
+    }
+  ]
+}

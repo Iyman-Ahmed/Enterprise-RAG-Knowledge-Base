@@ -1,0 +1,34 @@
+ACME CORPORATION — EMPLOYEE HANDBOOK 2024
+=========================================
+
+SECTION 1: LEAVE POLICY
+------------------------
+All full-time employees are entitled to 20 days of paid annual leave per year. Leave accrues at 1.67 days per month. Unused leave can be carried over up to a maximum of 10 days into the next calendar year. Employees must request leave at least 5 business days in advance via the HR portal. Emergency leave requests may be approved by direct managers within 24 hours.
+
+Sick leave is provided separately at 10 days per year. Medical certificates are required for absences exceeding 3 consecutive days. Sick leave does not carry over to the next year.
+
+Maternity leave is 16 weeks fully paid. Paternity leave is 4 weeks fully paid. Both must be applied for at least 4 weeks before the expected start date.
+
+SECTION 2: REMOTE WORK POLICY
+------------------------------
+Employees may work remotely up to 3 days per week with manager approval. Full remote work arrangements require VP-level approval and are reviewed quarterly. All remote employees must be available during core hours of 10am to 3pm in their local timezone. Remote work is not permitted from countries outside the approved list without prior legal clearance.
+
+SECTION 3: PERFORMANCE REVIEWS
+--------------------------------
+Performance reviews are conducted twice a year: in June and December. Employees are rated on a 5-point scale across four dimensions: technical skills, collaboration, initiative, and delivery. A rating of 3 is considered "meets expectations." Ratings of 4 or 5 qualify the employee for a performance bonus. The bonus pool is 10% of base salary for a rating of 4, and 20% for a rating of 5.
+
+SECTION 4: EXPENSE POLICY
+--------------------------
+Business travel expenses must be submitted within 30 days of travel. Receipts are required for all expenses above $25. The daily meal allowance during business travel is $60. Hotel accommodation must not exceed $250 per night in standard cities and $350 per night in tier-1 cities (New York, London, San Francisco, Tokyo). Economy class is standard for flights under 6 hours. Business class is permitted for flights over 6 hours with VP approval.
+
+SECTION 5: CODE OF CONDUCT
+---------------------------
+All employees must complete the annual Code of Conduct training by January 31st each year. Violations of the code of conduct should be reported to HR or via the anonymous ethics hotline at 1-800-555-ETHICS. Retaliation against employees who report violations in good faith is strictly prohibited and grounds for immediate termination.
+
+SECTION 6: IT SECURITY
+-----------------------
+Employees must use company-approved devices for all work activities. Personal devices may access company email via the approved MDM profile only. Passwords must be at least 12 characters and changed every 90 days. Multi-factor authentication is mandatory for all company systems. Sharing of login credentials is a terminable offense.
+
+SECTION 7: BENEFITS
+--------------------
+Health insurance covers employees and up to 3 dependents. The company covers 80% of the premium; employees cover 20%. Dental and vision insurance are optional add-ons available at group rates. The company matches 401k contributions up to 4% of base salary. Employees are eligible for the 401k match after 6 months of employment. A $1,000 annual learning and development budget is provided to all employees, reimbursable against approved courses and certifications.

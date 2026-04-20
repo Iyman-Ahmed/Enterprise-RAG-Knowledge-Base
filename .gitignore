@@ -1,0 +1,58 @@
+# Secrets & environment
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Vector store data (large binary files)
+vectorstore/chroma_db/
+
+# Evaluation logs
+evaluation/metrics_log.jsonl
+evaluation/*.jsonl
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs & temp
+*.log
+tmp/
+temp/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
