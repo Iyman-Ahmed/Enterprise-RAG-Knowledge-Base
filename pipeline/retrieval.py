@@ -22,12 +22,13 @@ def reciprocal_rank_fusion(
     for rank, hit in enumerate(dense_hits):
         key = hit["text"]
         scores[key] = scores.get(key, 0) + 1 / (k + rank + 1)
-        docs_map[key] = hit
+        docs_map[key] = hit  # dense hits carry full metadata — always preferred
 
     for rank, hit in enumerate(bm25_hits):
         key = hit["text"]
         scores[key] = scores.get(key, 0) + 1 / (k + rank + 1)
-        docs_map[key] = hit
+        if key not in docs_map:  # don't overwrite dense hit's metadata with BM25's empty {}
+            docs_map[key] = hit
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     return [docs_map[text] for text, _ in ranked]

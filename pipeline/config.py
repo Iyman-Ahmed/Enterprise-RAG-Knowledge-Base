@@ -23,9 +23,9 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 RERANKER_MODEL = os.getenv("RERANKER_MODEL", "cross-encoder/ms-marco-MiniLM-L6-v2")
 
 # ── Retrieval ─────────────────────────────────────────────────
-TOP_K_RETRIEVAL = int(os.getenv("TOP_K_RETRIEVAL", "10"))
-TOP_K_RERANK = int(os.getenv("TOP_K_RERANK", "4"))
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "512"))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "64"))
+TOP_K_RETRIEVAL = int(os.getenv("TOP_K_RETRIEVAL", "15"))
+TOP_K_RERANK = int(os.getenv("TOP_K_RERANK", "6"))
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 
 SUPPORTED_EXTENSIONS = {".pdf", ".docx", ".txt", ".md"}
