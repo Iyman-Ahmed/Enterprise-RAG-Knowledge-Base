@@ -34,6 +34,11 @@ with st.sidebar:
     )
 
     if uploaded_files and st.button("Index Documents", type="primary"):
+        # Clear existing index so only the current upload is queryable
+        chroma.delete_collection()
+        retriever.invalidate_bm25_cache()
+        st.session_state.messages = []   # reset chat — old answers belong to old docs
+
         progress = st.progress(0)
         for i, f in enumerate(uploaded_files):
             suffix = os.path.splitext(f.name)[1].lower()
@@ -52,6 +57,7 @@ with st.sidebar:
             finally:
                 os.unlink(tmp_path)
             progress.progress((i + 1) / len(uploaded_files))
+        st.rerun()
 
     st.divider()
     st.metric("Documents indexed", chroma.count())
