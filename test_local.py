@@ -155,8 +155,8 @@ if lm_ok:
     check("Sources list returned",            len(sources) > 0,     f"sources: {sources}")
     check("Source has source_file",
           any(s.get("source_file") for s in sources))
-    check("Answer contains source citation",
-          "[Source:" in answer or "Source:" in answer,
+    check("Answer has no inline citation",
+          "source:" not in answer.lower() and "sources:" not in answer.lower(),
           f"answer snippet: {answer[:200]!r}")
     check(f"Latency < 30s",                  latency < 30,         f"{latency:.1f}s")
     print(f"\n  Answer preview:\n{textwrap.indent(answer[:400], '    ')}")

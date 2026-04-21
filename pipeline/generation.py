@@ -5,6 +5,7 @@ LLM Generation — dual pipeline:
 
 Switch with LLM_PROVIDER env var: "lmstudio" | "groq"
 """
+import re
 from typing import List, Dict, Any
 from openai import OpenAI
 from groq import Groq
@@ -19,7 +20,8 @@ from pipeline.config import (
 
 SYSTEM_PROMPT = """You are an enterprise knowledge base assistant.
 Answer questions strictly based on the provided context.
-Always cite your sources using [Source: filename, page X] format.
+Do NOT include any citations, source references, or file names in your answer text.
+Sources are shown separately in the UI below your answer.
 If the context does not contain enough information, say "I don't have enough information in the provided documents."
 Never fabricate facts."""
 
@@ -28,8 +30,14 @@ ANSWER_TEMPLATE = """Context:
 
 Question: {question}
 
-Instructions: Answer using only the context above. Include inline citations like [Source: filename].
+Instructions: Answer using only the context above. Do not mention filenames, page numbers, or source labels in your answer.
 """
+
+
+def _strip_source_block(text: str) -> str:
+    """Remove any trailing Sources/citations block the LLM appends."""
+    text = re.sub(r'\n+\[?Sources?:?\]?.*', '', text, flags=re.DOTALL | re.IGNORECASE)
+    return text.strip()
 
 
 def _build_context(hits: List[Dict]) -> str:
@@ -71,7 +79,7 @@ class LMStudioPipeline:
             max_tokens=1024,
         )
 
-        answer = response.choices[0].message.content
+        answer = _strip_source_block(response.choices[0].message.content)
         return {
             "answer": answer,
             "sources": [h.get("metadata", {}) for h in hits],
@@ -111,7 +119,7 @@ class GroqPipeline:
             max_tokens=1024,
         )
 
-        answer = response.choices[0].message.content
+        answer = _strip_source_block(response.choices[0].message.content)
         return {
             "answer": answer,
             "sources": [h.get("metadata", {}) for h in hits],
