@@ -35,8 +35,8 @@ def reciprocal_rank_fusion(
 
 
 class HybridRetriever:
-    def __init__(self):
-        self.chroma = ChromaManager()
+    def __init__(self, chroma: ChromaManager = None):
+        self.chroma = chroma or ChromaManager()
         self._bm25 = None
         self._bm25_corpus: List[str] = []
 

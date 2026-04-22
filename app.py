@@ -11,15 +11,15 @@ from vectorstore.chroma_manager import ChromaManager
 st.set_page_config(page_title="Enterprise RAG", page_icon="🔍", layout="wide")
 
 @st.cache_resource
-def get_retriever():
-    return HybridRetriever()
-
-@st.cache_resource
 def get_chroma():
     return ChromaManager()
 
-retriever = get_retriever()
+@st.cache_resource
+def get_retriever(_chroma):
+    return HybridRetriever(_chroma)
+
 chroma = get_chroma()
+retriever = get_retriever(chroma)
 
 # ── Sidebar ───────────────────────────────────────────────────
 with st.sidebar:
