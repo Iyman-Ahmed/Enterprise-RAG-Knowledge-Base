@@ -24,7 +24,7 @@ retriever = get_retriever(chroma)
 # ── Sidebar ───────────────────────────────────────────────────
 with st.sidebar:
     st.title("📁 Document Upload")
-    st.caption(f"LLM: **{LLM_PROVIDER.upper()}** \n Free Tier LLMs and frameworks has been used in this model, \n to see its full potential please download the model and replace model with higher tokens rate(CLaude, Gpt..)")
+    st.caption(f"LLM: **{LLM_PROVIDER.upper()}** — This demo uses free-tier LLMs and frameworks. For full performance, replace the model with a higher-capacity option such as Claude or GPT.")
     st.divider()
 
     uploaded_files = st.file_uploader(
